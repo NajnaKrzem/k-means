@@ -1,5 +1,3 @@
-
-
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.datasets import load_digits
@@ -45,8 +43,6 @@ pca = PCA(2)
 data_2d = pca.fit_transform(data)
 centroids_2d = pca.transform(centroids)
 
-# Wizualizacja danych i centroidów
 plt.scatter(data_2d[:, 0], data_2d[:, 1], c=assignments, cmap='viridis', s=5)
 plt.scatter(centroids_2d[:, 0], centroids_2d[:, 1], color='red', marker='*', s=100)
-plt.title("K-means clustering of digits dataset (PCA-reduced to 2D)")
 plt.show()
