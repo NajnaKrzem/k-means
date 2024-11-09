@@ -1,3 +1,5 @@
+import numpy as np
+
 def update_centroids(data, num_clusters, assignments):
     centroids = []
     for c in range(num_clusters):

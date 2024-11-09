@@ -1,3 +1,5 @@
+import numpy as np
+
 def update_assignments(data, centroids):
     assignments = []
     for point in data:

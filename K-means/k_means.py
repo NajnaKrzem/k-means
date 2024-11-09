@@ -2,6 +2,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.datasets import load_digits
 from sklearn.decomposition import PCA
+from uc import update_centroids
+from ua import update_assignments
+
 
 data, labels = load_digits(return_X_y=True)
 (n_samples, n_features), n_digits = data.shape, np.unique(labels).size

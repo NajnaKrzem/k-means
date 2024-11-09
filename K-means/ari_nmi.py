@@ -1,3 +1,4 @@
+from k_means import labels, assignments
 from sklearn.metrics import adjusted_rand_score, normalized_mutual_info_score
 
 kmeans_ari = adjusted_rand_score(labels, assignments)                          
